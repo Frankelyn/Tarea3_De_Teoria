@@ -1,0 +1,95 @@
+﻿<Window x:Class="Tarea3.UI.Registros.rEjercicio1Cap6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea3.UI.Registros"
+        mc:Ignorable="d"
+        Title="Ejercicio 1-5 Captulo 6" Height="500" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Ejercicios 1-5 - Agregar el cálculo del promedio, calificacion minima, "/>
+                <Label Content="                    calificacion maxima, y que utilice funciones  "/>
+                <Label Content="                    con arreglos jagged. "/>
+
+
+            </StackPanel>
+
+
+            <Label Content="Digite Cantidad Salones:" />
+            <TextBox x:Name="SalonesTexbox" Height="22" />
+
+            <Label Content="Digite Cantidad de Estudiantes del salon:" />
+            <TextBox x:Name="CantidadEstudiantesTexbox" Height="22" />
+
+            <Label Content="Digite la calificacion:" />
+            <TextBox x:Name="CalificacionTexbox" Height="22" />
+
+
+
+
+            <Label Content="Promedio" Height="24"/>
+            <TextBox x:Name="PromedioTextbox" Height="24" IsEnabled="False"/>
+
+            <Label Content="Calificacion mas alta: " Height="24"/>
+            <TextBox x:Name="MaximaTextbox" Height="24" IsEnabled="False"/>
+
+            <Label Content="Calificacion mas baja" Height="24"/>
+            <TextBox x:Name="MinimaTextbox" Height="24" IsEnabled="False"/>
+            <StackPanel Orientation="Horizontal" Height="37">
+
+
+                <Button x:Name="CalcularButton" Margin="5,0" Click="CalcularButton_Click"  RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="300" Y="40"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Calcular" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="AddSalonButton" Margin="5,0" Click="AddSalonButton_Click"  RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="00" Y="40"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Añadir cantidad" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="AddCalificacionButton" Margin="5,0" Click="AddCalificacionButton_Click"  RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="5" Y="40"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Añadir Calificacion" />
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+
+            <!--Barra de botones-->
+
+        </StackPanel>
+    </Grid>
+</Window>

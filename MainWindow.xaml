@@ -1,0 +1,33 @@
+﻿<Window x:Class="Tarea3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea3"
+        mc:Ignorable="d"
+        Title="Tarea 3 de teoria" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Menu Height="18">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="Ejercicio1Cap6MenuItem" Header="Registro Ejercicios 1-5 Cap6" Click="Ejercicio1Cap6MenuItem_Click"></MenuItem>
+                    <MenuItem x:Name="Ejercicio1Cap7MenuItem" Header="Registro Ejercicio 1 Cap7" Click="Ejercicio1Cap7MenuItem_Click"></MenuItem>
+                    <MenuItem x:Name="Ejercicio2Cap7MenuItem" Header="Registro Ejercicio 2 Cap7" Click="Ejercicio2Cap7MenuItem_Click"></MenuItem>
+                    <MenuItem x:Name="Ejercicio5Cap7MenuItem" Header="Registro Ejercicio 5 Cap7" Click="Ejercicio5Cap7MenuItem_Click"></MenuItem>
+                    
+                </MenuItem>
+
+
+
+
+
+
+
+                <MenuItem Header="Ayuda">
+                    <Menu/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+
+    </Grid>
+</Window>
